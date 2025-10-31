@@ -1,0 +1,38 @@
+const leia = require("readline-sync");
+
+let opcao, quant
+
+
+console.log("#########   Menu   ##########");
+
+opcao = leia.questionInt("\nCodigo do produto: ");
+quant = leia.questionInt("Quantidade: ");
+
+switch (opcao) {
+  case 1:
+    console.log("Produto: Cachorro Quente")
+    console.log("Valor: R$"+ 10.00 * quant +",00");
+    break;
+  case 2:
+    console.log("Produto: X-Salada")
+    console.log("Valor: R$"+ 15.00 * quant +",00");
+    break;
+  case 3:
+    console.log("Produto: X-Bacon")
+    console.log("Valor: R$"+ 18.00 * quant +",00");
+    break;
+   case 4:
+    console.log("Produto: Bauru")
+    console.log("Valor: R$"+ 12.00 * quant +",00") ;
+    break;
+   case 5:
+    console.log("Produto: Refrigente")
+    console.log("Valor: R$"+ 8.00 * quant +",00");
+    break;
+   case 6:
+    console.log("Produto: Suco de Laranja")
+    console.log("Valor: R$"+ 13.00 * quant +",00");
+    break;   
+  default:
+    console.log("Opção inválida!");  
+}

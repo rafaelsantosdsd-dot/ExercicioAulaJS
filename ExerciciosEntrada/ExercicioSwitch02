@@ -1,0 +1,44 @@
+const leia = require("readline-sync");
+
+let cargo, nome, sal
+
+nome = leia.question("Nome do Colaborador: ")
+cargo = leia.questionInt("Cargo: ")
+sal = leia.questionFloat("Salario: ")
+
+console.clear()
+
+switch (cargo) {
+  case 1:
+    console.log("Nome do Colaborador: " + nome)
+    console.log("Cargo: Gerente")
+    console.log("Salario: R$ " + (sal + (sal*10)/100))
+    break;
+  case 2:
+    console.log("Nome do Colaborador" + nome)
+    console.log("Cargo: Vendedor")
+    console.log("Salario: R$ " + (sal + (sal*7)/100))
+    break;
+  case 3:
+   console.log("Nome do Colaborador: " + nome)
+    console.log("Cargo: Supervisor")
+    console.log("Salario: R$ " + (sal + (sal*9)/100))
+    break;
+   case 4:
+    console.log("Nome do Colaborador: " + nome)
+    console.log("Cargo: Motorista")
+    console.log("Salario: R$ " + (sal + (sal*6)/100))
+    break;
+   case 5:
+    console.log("Nome do Colaborador: " + nome)
+    console.log("Cargo: Estoquista")
+    console.log("Salario: R$ " + (sal + (sal*5)/100))
+    break;
+   case 6:
+    console.log("Nome do Colaborador: " + nome)
+    console.log("Cargo: Técnico de TI")
+    console.log("Salario: R$ " + (sal + (sal*8)/100))
+    break;   
+  default:
+    console.log("Opção inválida!");  
+}

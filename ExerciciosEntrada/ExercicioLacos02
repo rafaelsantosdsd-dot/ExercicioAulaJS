@@ -1,0 +1,20 @@
+const leia = require('readline-sync')
+
+let nome, idade, sangue
+
+nome  = leia.question("Digite o nome do doador: ")
+idade = leia.questionInt("Digite a idade do doador: ")
+
+if(idade < 18){
+    console.log(nome + " não está apto para doar sangue")
+}else if(idade > 69){
+    console.log(nome + " não está apto para doar sangue")
+}else if(idade >= 60){
+    sangue = leia.keyInYNStrict("Primeira doação de sangue?")
+    if (sangue) {console.log(nome + " não está apto para doar sangue")
+
+    }else
+        {console.log(nome + " está apto para doar sangue")}
+}else{
+    console.log(nome + " está apto para doar sangue")
+}
